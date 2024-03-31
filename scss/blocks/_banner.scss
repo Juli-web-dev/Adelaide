@@ -1,0 +1,5 @@
+.banner {
+    width: 100%;
+    @include border;
+    padding: 20px;
+}

@@ -1,0 +1,13 @@
+.logo {
+    font-family: 'selfie';
+	text-decoration: none;
+	font-size: 34px;
+	color: #3c3c3c;
+	&:hover {
+		color: $color-gold;
+	}
+	&_big {
+		font-size: 45px;
+		padding-bottom: 20px;
+	}
+}

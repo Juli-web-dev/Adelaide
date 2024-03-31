@@ -1,0 +1,34 @@
+.intro {
+    width: 100%;
+    height: 82vh;
+    background: url(/img/3.png) center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 15px;
+
+    @media screen and (max-width: $breakpoints-lg) {
+
+        padding-top: 78px;
+    }
+
+    &__date {
+        font-size: clamp(0.875rem, 0.7774rem + 0.4878vw, 1.125rem);
+        letter-spacing: 0.1px;
+        color: #ffffff;
+        font-family: 'Playfair Display Regular';
+
+    }
+
+    &__title {
+        font-size: clamp(1.5rem, 1.061rem + 2.1951vw, 2.625rem);
+        font-family: 'Raleway bold';
+    }
+
+}

@@ -1,0 +1,127 @@
+.button {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+   font-family: 'Raleway bold';
+   border-radius: 30px;
+   font-size: 14px;
+
+   &_white {
+      min-width: 143px;
+      height: 52px;
+      background-color: white;
+      color: #3c3c3c;
+
+      &:hover {
+         background-color: $color-gold;
+      }
+      @media (hover: none) {
+         background-color: white !important;
+         color: #3c3c3c !important;
+       }
+      @media screen and (max-width: $breakpoints-lg) {
+         max-width: 120px;
+         height: 46px;
+         font-size: 12px;
+      }
+   }
+
+   &_gold {
+      max-width: 127px;
+      height: 40px;
+      background-color: $color-gold;
+      color: white;
+
+      &:hover {
+         background-color: $color-dark-gold;
+      }
+      @media (hover: none) {
+         background-color: $color-gold !important;
+      color: white !important;
+       }
+   }
+
+   &_transparent {
+      background-color: rgba(255, 255, 255, 0.2);
+      height: 40px;
+      min-width: 127px;
+      color: white;
+
+      &:hover {
+         background-color: $color-gold;
+      }
+      @media (hover: none) {
+         background-color: rgba(255, 255, 255, 0.2) !important;
+         color: white !important;
+       }
+   }
+
+   &_small {
+
+      height: 27px;
+      max-width: 85px;
+      color: white;
+      font-size: 13px;
+      background-color: #c2aa6f;
+      letter-spacing: 1px;
+      border: solid white 2px;
+
+
+      &:hover {
+         background-color: $color-dark-gold;
+      }
+      @media (hover: none) {
+         background-color: #c2aa6f !important;
+         color: white !important;
+         border: solid white 2px !important;
+       }
+
+   }
+
+   &_big {
+      margin: 50px 0;
+      @include border;
+      width: 100%;
+      height: 92px;
+      font-size: 14px;
+      background-color: transparent;
+      border-radius: unset;
+      color: $color-gold;
+
+      &:hover {
+         border: 2px solid $color-dark-gold;
+         color: $color-dark-gold;
+      }
+      @media (hover: none) {
+         background-color: transparent !important;
+         color: $color-gold !important;
+       }
+
+      @media screen and (max-width: $breakpoints-sm) {
+         width: 80%;
+      }
+      @media screen and (max-width: $breakpoints-xsm) {
+         width: 100%;
+         
+     }
+   }
+
+   &_long {
+      display: inline-block;
+      height: 40px;
+      background-color: $color-gold;
+      color: white;
+      width: 100%;
+
+      &:hover {
+         background-color: $color-dark-gold;
+      }
+
+      @media (hover: none) {
+         background-color: $color-gold !important;
+         color: white !important;
+       }
+   }
+
+}

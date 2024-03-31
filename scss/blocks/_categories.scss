@@ -1,0 +1,27 @@
+.categories {
+    text-align: center;
+    @include border;
+    width: 100%;
+    padding: 30px 0;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:30px;
+
+    &__title {
+        font-family: "Playfair Display Regular";
+        font-size: 14px;
+        color: $color-gold;     
+    }
+    &__link{
+        padding-bottom: 15px;
+        font-family: "Raleway Medium";
+        font-size: 18px;
+        color: rgb(60, 60, 60);
+
+        &:hover {
+            color: $color-dark-gold;
+         }
+    }
+    
+}

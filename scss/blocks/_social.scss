@@ -1,0 +1,25 @@
+.social {
+    display: flex;
+    gap: 25px;
+    &_center {
+        justify-content: center;
+    }
+
+    @media screen and (max-width: $breakpoints-lg) {
+        display: none;
+    }
+
+    &__footer {
+        display: flex;
+    }
+}
+
+.social__icon:hover i {
+
+    color: $color-gold !important;
+}
+
+.social__icon i {
+    transition: all 0.2s;
+}
+

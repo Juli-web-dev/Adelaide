@@ -1,0 +1,52 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+    padding: 0 15px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+  
+
+    &__text {
+        font-size: 14px;
+        color: rgb(60, 60, 60);
+        font-family: "Playfair Display Regular";
+        line-height: 1.7;
+        padding-top: 25px;
+        padding-bottom: 30px;
+
+        @media screen and (max-width: $breakpoints-lg) {
+           padding-top: 0;
+          }
+          @media screen and (max-width: $breakpoints-sm) {
+            font-size: 12px;
+             }
+       
+    }
+
+    &__copyright {
+        padding-top: 30px;
+        color: rgb(60, 60, 60);
+        font-family: "Playfair Display Regular";
+        font-size: 14px;
+
+        &_gold {
+            color: $color-gold;
+            text-decoration: underline;
+        }
+    }
+
+    @media screen and (max-width: $breakpoints-lg) {
+      text-align: center;
+      padding: 0 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    @media screen and (max-width: $breakpoints-sm) {
+     padding: 20px 15px;
+      }
+
+}

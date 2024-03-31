@@ -1,0 +1,39 @@
+.tags {
+    width: 100%;
+    @include border;
+    padding: 35px 25px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    &__title {
+        color: $color-gold;
+        font-size: 14px;
+        font-family: "Playfair Display Regular";
+        text-align: center;
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;  
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link {
+        width: auto;
+        padding: 7px 15px;
+        border-radius: 50px;
+      
+        height: 30px;
+        background-color: rgb(243, 243, 243);
+        font-family: "Raleway bold";
+        font-size: 13px;
+        color: rgb(60, 60, 60);
+
+        &:hover {
+            background-color: $color-dark-gold;
+         }
+    }
+
+}

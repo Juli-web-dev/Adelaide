@@ -1,0 +1,37 @@
+.newsletter {
+    width: 100%;
+    @include border;
+    text-align: center;
+    padding: 30px 30px 45px 30px;
+    font-family: "Playfair Display Regular";
+   
+
+    &__title {
+        color: $color-gold;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    &__description {
+        font-size: 14px;color:
+         rgb(106, 106, 106);
+         padding-bottom: 30px;
+    }
+
+
+
+    input {
+        display: inline-block;
+        width: 100%;
+        background-color: rgb(243, 243, 243);
+        font-size: 14px;
+        color: rgb(173, 173, 173);
+        height: 36px;
+        border: none;
+        border-radius: 50px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+   
+}

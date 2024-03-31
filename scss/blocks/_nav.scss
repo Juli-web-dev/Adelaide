@@ -1,0 +1,66 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1148px;
+    margin: 0 auto;
+    padding: 15px;
+    gap: 20px;
+    z-index: 999;
+
+    @media screen and (max-width: $breakpoints-lg) {
+        position: fixed;
+        width: 100%;
+        background: white;
+    }
+
+
+
+    &__links {
+        display: flex;
+        gap: 30px;
+        transition: all 0.2s;
+
+        @media screen and (max-width: $breakpoints-lg) {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            /*конечная позиция меню */
+            width: 200px;
+            height: 100%;
+            margin: 0;
+            padding: 80px 0;
+            list-style: none;
+            background-color: #ECEFF1;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+            transition-duration: .25s;
+            z-index: 1;
+          
+        }
+
+    }
+
+    &__link {
+        font-family: 'Playfair Display Regular';
+        font-size: 18px;
+        color: $color-grey;
+
+        &:hover {
+            color: $color-gold;
+        }
+
+        @media screen and (max-width: $breakpoints-lg) {
+            padding: 12px 24px;
+        }
+    }
+
+
+
+}
+
+.nav__links_active {
+
+    right: 0;
+}
